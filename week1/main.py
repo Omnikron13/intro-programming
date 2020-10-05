@@ -2,7 +2,7 @@
 """
 Created on Thu Oct  1 18:00:34 2020
 
-@author: Joey
+@author: Joey (100322897)
 """
 
 
