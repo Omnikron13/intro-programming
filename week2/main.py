@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  5 18:31:30 2020
+
+@author: Joey (100322897)
+"""
+
 
 id = [1,0,0,3,2,2,8,9,7]
 
