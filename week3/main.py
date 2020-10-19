@@ -29,3 +29,15 @@ def inputFloat(msg):
         print("Error: not a number")
         return inputFloat(msg)
 
+def inputNonZeroFloat(msg):
+    """
+    Further wraps inputFloat() with the additional constraint that the float input must be non-zero.
+
+    :param msg: input prompt to display
+    :return: inputted valid non-zero float
+    """
+    x = inputFloat(msg)
+    if x != 0: return x
+    print("Error: this value may not be 0")
+    return inputNonZeroFloat(msg)
+
