@@ -42,3 +42,15 @@ def inputNonZeroFloat(msg):
     print("Error: this value may not be 0")
     return inputNonZeroFloat(msg)
 
+
+def test_linear():
+    """
+    Test the linear() function with user input
+    """
+    m = inputNonZeroFloat("Please enter a value for m: ")
+    c = inputFloat("Please enter a value for c: ")
+    print(f"x = {linear(m, c)}")
+
+
+if __name__ == "__main__":
+    test_linear()
