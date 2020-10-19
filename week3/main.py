@@ -13,3 +13,19 @@ def linear(m, c):
     :return: x
     """
     return (0-c)/m
+
+
+def inputFloat(msg):
+    """
+    Wraps input() but insists on a valid float being entered.
+
+    :param msg: input prompt to display
+    :return: inputted valid float
+    """
+    x = input(msg)
+    try:
+        return float(x)
+    except ValueError:
+        print("Error: not a number")
+        return inputFloat(msg)
+
