@@ -3,6 +3,8 @@
 @author: Joey (100322897)
 """
 
+from math import sqrt
+
 
 def linear(m, c):
     """
@@ -13,6 +15,25 @@ def linear(m, c):
     :return: x
     """
     return (0-c)/m
+
+
+def quadSolver(a, b, c):
+    """
+    Solves quadratic equations with the quadratic formula.
+
+    :param a: coefficient of x**2
+    :param b: coefficient of x
+    :param c: constant
+    :return: list containing a pair of solutions, or None if it cannot be solved
+    """
+    n = b ** 2 - 4 * a * c
+    if n < 0:
+        print("Could not solve this equation.")
+        return None
+    x = [0,0]
+    x[0] = (-b + sqrt(n)) / 2 * a
+    x[1] = (-b - sqrt(n)) / 2 * a
+    return x
 
 
 def inputFloat(msg):
