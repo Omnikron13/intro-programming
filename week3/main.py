@@ -29,6 +29,7 @@ def inputFloat(msg):
         print("Error: not a number")
         return inputFloat(msg)
 
+
 def inputNonZeroFloat(msg):
     """
     Further wraps inputFloat() with the additional constraint that the float input must be non-zero.
