@@ -26,13 +26,13 @@ def quadSolver(a, b, c):
     :param c: constant
     :return: list containing a pair of solutions, or None if it cannot be solved
     """
-    n = b ** 2 - 4 * a * c
-    if n < 0:
+    d = b ** 2 - 4 * a * c
+    if d < 0:
         print("Could not solve this equation.")
         return None
     x = [0,0]
-    x[0] = (-b + sqrt(n)) / 2 * a
-    x[1] = (-b - sqrt(n)) / 2 * a
+    x[0] = (-b + sqrt(d)) / 2 * a
+    x[1] = (-b - sqrt(d)) / 2 * a
     return x
 
 
