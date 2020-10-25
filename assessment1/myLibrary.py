@@ -136,9 +136,25 @@ def chartList(id):
     # Print a header
     print("| 0 1 2 3 4 5 6 7 8 9")
 
-    # Print bars indicating each number in the ID
-    for x in id:
-        print("|-" + "--" * x + "X")
+    # Loop over each digit in the list
+    while len(id) > 0:
+        # Initialise string that will hold the bar
+        s = "|-"
+
+        # Remove first element of the list
+        pH = id.pop(0)
+
+        # Append the body of the bar to the string
+        while pH > 0:
+            s += "--"
+            pH -= 1
+
+        # Append the end of the bar to the string
+        else:
+            s += "X"
+
+        # Print the bar
+        print(s)
 
     # Print a footer
     print("| 0 1 2 3 4 5 6 7 8 9")
