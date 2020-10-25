@@ -3,6 +3,8 @@
 @author: Joey (100322897)
 """
 
+from math import sqrt
+
 
 def inputInt(msg, min=None, max=None):
     """
