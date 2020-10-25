@@ -176,8 +176,8 @@ def quadSolver(a, b, c):
     x = [0,0]
 
     # Calculate both possible solutions
-    x[0] = (-b + sqrt(d)) / 2 * a
-    x[1] = (-b - sqrt(d)) / 2 * a
+    x[0] = (-b + sqrt(d)) / (2 * a)
+    x[1] = (-b - sqrt(d)) / (2 * a)
 
     return x
 
