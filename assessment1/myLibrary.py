@@ -8,7 +8,7 @@ from math import sqrt
 
 def inputInt(msg, min=None, max=None):
     """
-    Wraps the input() function, requiring the inout to be a valid integer, with optional bounds.
+    Wraps input(), requiring the inout to be a valid integer, with optional bounds.
 
     :param msg: input prompt to display
     :param min: optional minimum value allowed
