@@ -100,7 +100,7 @@ def bubble(list):
 
 def calculateY(x, m, c):
     """
-    Calculates y - mx + c
+    Calculates y = mx + c
 
     :param x: integer
     :param m: integer
