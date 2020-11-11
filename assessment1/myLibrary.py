@@ -232,10 +232,10 @@ def getAv(list):
     mean = total/len(list)
 
     # ...and the median
-    if len(list) % 2:
-        return [mean, list[len(list)//2]]
+    if len(list) % 2:  # has an odd number of elements
+        return [mean, list[len(list)//2]]     # median is simply the middle element
     mid = len(list)//2
-    return [mean, (list[mid]+list[mid-1])/2]
+    return [mean, (list[mid]+list[mid-1])/2]  # median is the average of the middle two elements
 
 
 def slicer(list):
