@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: Joey (100322897)
+:author: Joey (100322897)
 """
 
 from math import sqrt
